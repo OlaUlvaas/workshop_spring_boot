@@ -5,17 +5,17 @@ import org.springframework.stereotype.Repository;
 import javax.persistence.*;
 import java.util.Objects;
 
-@Repository
-@Entity
+//@Repository
+//@Entity
 public class AppUser {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@Id
+    //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    @Column(nullable = false, length = 50)
+    //@Column(nullable = false, length = 50)
     private String firstName;
-    @Column(nullable = false, length = 50)
+    //@Column(nullable = false, length = 50)
     private String lastName;
-    @Column(nullable = false, unique = true)
+    //@Column(nullable = false, unique = true)
     private String email;
 
     public AppUser() {
