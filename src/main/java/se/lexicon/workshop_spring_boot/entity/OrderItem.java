@@ -8,7 +8,7 @@ import java.util.Objects;
 //@Repository
 //@Entity
 public class OrderItem {
-    //Id, quantity, product
+    //Id, quantity, product, productOrder
     //@Id
     //@GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
@@ -34,6 +34,8 @@ public class OrderItem {
         this.product = product;
         this.productOrder = productOrder;
     }
+
+    private ProductOrder fromProductOrder;
 
     public double calculatePrice(int quantity, Product product){
         return quantity * product.getPrice();
